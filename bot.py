@@ -725,7 +725,7 @@ ALLOWED_USERS = {6244556529, 1220712438}
 # ================= MAIN MENU =================
 def show_main_menu(update, context):
     keyboard = [
-        ["1️⃣ Total Billing Count", "2️⃣ Last Dialysis (by patient id)"],
+        ["1️⃣ Billing Count", "2️⃣ Last Dialysis (by patient id)"],
         ["3️⃣ Top 5 Branches (by billing count)", "4️⃣ Last 30 Days Billing"],
         ["5️⃣ Support"]
     ]
@@ -756,7 +756,7 @@ def show_main_menu(update, context):
 
 # ================= SUB MENUS =================
 def submenu_1(update, context):
-    keyboard = [["1.1 Enter Branch ID", "1.2 Total Billing Count in 2025"], ["🔙 Back"]]
+    keyboard = [["1.1 Enter Branch ID", "1.2 Total Billing"], ["🔙 Back"]]
     update.message.reply_text("Select Billing Count by:",
                               reply_markup=ReplyKeyboardMarkup(keyboard, resize_keyboard=True))
     context.user_data['menu'] = "1"
