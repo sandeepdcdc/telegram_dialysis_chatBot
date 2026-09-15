@@ -756,7 +756,7 @@ def show_main_menu(update, context):
 
 # ================= SUB MENUS =================
 def submenu_1(update, context):
-    keyboard = [["1.1 Enter Branch ID", "1.2 Total Billing"], ["🔙 Back"]]
+    keyboard = [["1.1 Enter Branch ID", "1.2 Total Billing Count in 2025"], ["🔙 Back"]]
     update.message.reply_text("Select Billing Count by:",
                               reply_markup=ReplyKeyboardMarkup(keyboard, resize_keyboard=True))
     context.user_data['menu'] = "1"
