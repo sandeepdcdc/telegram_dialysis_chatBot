@@ -726,7 +726,7 @@ ALLOWED_USERS = {6244556529, 1220712438}
 def show_main_menu(update, context):
     keyboard = [
         ["1️⃣ Billing Count", "2️⃣ Last Dialysis (by patient id)"],
-        ["3️⃣ Top 5 Branches (by billing count)", "4️⃣ Last 30 Days Billing"],
+        ["3️⃣ Top 5 Branches (by billing count)", "4️⃣ Last 6 month Billing"],
         ["5️⃣ Support"]
     ]
     # update.message.reply_text(
