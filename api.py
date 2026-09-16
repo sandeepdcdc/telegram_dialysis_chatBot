@@ -257,7 +257,7 @@ def billing_total():
         conn = get_connection()
         cursor = conn.cursor()
 
-        cursor.execute("SELECT COUNT(patient_id) FROM dc_patient_billing WHERE billing_date >= '2025-01-01' AND billing_date < '2026-01-01'")
+        cursor.execute("SELECT COUNT(patient_id) FROM dc_patient_billing WHERE billing_date >= '2025-06-01' AND billing_date < '2026-01-01'")
         total = cursor.fetchone()[0] or 0
 
         conn.close()
